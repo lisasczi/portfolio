@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "bootstrap";
+//  @import "bootstrap/scss/bootstrap";
+//= require bootstrap/dist/css/bootstrap
+
+ body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ .hidden {
+  display: none;
+ }

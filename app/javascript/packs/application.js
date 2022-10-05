@@ -11,3 +11,13 @@ import "channels"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+window.$ = window.jQuery = require("jquery");
+import "bootstrap/dist/js/bootstrap.bundle.js"
+
+// const menu = document.querySelector('.list-nav');
+// const btnMenu = document.querySelector('.btn-toggle-container');
+
+// btnMenu.addEventListener('click', function(){
+//     menu.classList.toggle('active-menu')
+// })

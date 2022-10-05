@@ -1,0 +1,21 @@
+<nav>
+    <ul class="list-nav">
+      <a href="<%= root_path %>"><%= image_tag("navbar/sunflower.jpg", :class =>"style_logo") %></a>
+        <li class="item-nav">
+            <%= link_to "Accueil", accueil_path %>
+        </li>
+        <li class="item-nav">
+            <%= link_to "Mes projets", articles_path %>
+        </li>
+        <li class="item-nav">
+            <%= link_to "Qui suis je?", about_path %>
+        </li>
+        <li class="item-nav">
+            <%= link_to "Contact",  new_contact_path %>
+        </li>
+    </ul>
+    <div class="btn-toggle-container" role="button">
+      <%= image_tag "navbar/hamburger.svg"%>
+    </div>
+
+</nav>
