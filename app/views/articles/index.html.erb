@@ -1,1 +1,14 @@
-<h1>coucou index articles</h1>
+<h2>Voici les projets auxquels j'ai participé</h2>
+
+    <div class="all-articles">
+        <% @articles.each do |article| %>
+            <div class="cards">
+                <div class="card-body">
+                  <%= link_to article_path(article.id) do %>
+                    <%= image_tag article.image, height: 350, width: 500, crop: :fill %>
+                    <a href="<%= article_path(article.id) %>"><h5><%= article.title %></h5></a>
+                    <% end %>
+                </div>
+            </div>
+          <% end %>
+      </div>

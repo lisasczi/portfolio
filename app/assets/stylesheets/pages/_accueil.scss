@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   padding: 20px;
-  background-color: #ffd;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -33,4 +32,20 @@
 .c3{
   background: #8d3758;
   border-radius: 48% 52% 60% 40% / 87% 59% 41% 13%;
+}
+
+
+
+.competences{
+  transition: transform 1s;
+}
+
+.competences a img {
+  opacity: 0.4;
+}
+
+.competences a img:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+
 }

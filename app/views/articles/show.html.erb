@@ -1,0 +1,14 @@
+  <p><a href="<%= root_path %>" class="btn-accueil">Accueil</a> / <a href="<%= articles_path %>" class="btn-accueil">Articles</a> / <%= @article.title %></p>
+
+  <div class="home_services">
+        <div class="home_card_photo">
+          <%= image_tag @article.image%>
+          </div>
+        <div class="home_card_info">
+          <div class="container">
+              <h1><%= @article.title %></h1>
+              <br/>
+              <p><%= @article.description %></p>
+              <br/>
+             <br/>
+  </div>
