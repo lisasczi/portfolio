@@ -1,8 +1,4 @@
 .box{
-  // width: 300px;
-  // height: 300px;
-  // background: crimson;
-  // border-radius: 60% 40% 70% 30% / 30% 30% 70% 70%;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -38,6 +34,12 @@
 
 .competences{
   transition: transform 1s;
+  // height: 100vh;
+  width: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2vw;
 }
 
 .competences a img {

@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/c324129148.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
   <body>
@@ -23,7 +23,13 @@
       <% end %>
     </div>
     <%= yield %>
-    <%= render 'shared/footer' %>
-
+<%# <script>
+      const menu = document.querySelector('.list-nav');
+      const btnMenu = document.querySelector('.btn-toggle-container');
+      btnMenu.addEventListener('click', function(){
+      menu.classList.toggle('active-menu')
+  })
+</script> %>
+<%# <script>src="./javascript/channels/nav.js"</script> %>
   </body>
 </html>

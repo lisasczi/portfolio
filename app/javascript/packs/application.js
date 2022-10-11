@@ -15,6 +15,8 @@ ActiveStorage.start()
 window.$ = window.jQuery = require("jquery");
 import "bootstrap/dist/js/bootstrap.bundle.js"
 
+console.log("Hello from app/javascript/application.js")
+
 // const menu = document.querySelector('.list-nav');
 // const btnMenu = document.querySelector('.btn-toggle-container');
 
