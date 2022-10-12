@@ -1,0 +1,52 @@
+<span id="photo1" class="target"></span>
+<span id="photo2" class="target"></span>
+<span id="photo3" class="target"></span>
+<span id="photo4" class="target"></span>
+<span id="photo5" class="target"></span>
+
+<div class="cadre_diapo">
+  <div class="interieur_diapo">
+
+    <div class=des>
+      <%= image_tag("#{@article.title}/#{@article.title}2.jpg") %>
+    </div>
+
+    <div class=des>
+      <%= image_tag("#{@article.title}/#{@article.title}3.jpg") %>
+    </div>
+
+    <div class=des>
+      <%= image_tag("#{@article.title}/#{@article.title}4.jpg") %>
+    </div>
+
+    <% if @article.title == "Amarylice"%>
+      <div class=des>
+        <%= image_tag("#{@article.title}/#{@article.title}5.jpg") %>
+      </div>
+      <div class=des>
+        <%= image_tag("#{@article.title}/#{@article.title}6.jpg") %>
+      </div>
+    <%end%>
+  </div>
+
+  <ul class="navigation_diapo">
+    <li>
+      <a href="#photo1"><%= image_tag("#{@article.title}/#{@article.title}2.jpg") %></a>
+    </li>
+    <li>
+      <a href="#photo2"><%= image_tag("#{@article.title}/#{@article.title}3.jpg") %></a>
+    </li>
+    <li>
+      <a href="#photo3"><%= image_tag("#{@article.title}/#{@article.title}4.jpg") %></a>
+    </li>
+    
+      <% if @article.title == "Amarylice"%>
+        <li>
+          <a href="#photo4"><%= image_tag("#{@article.title}/#{@article.title}5.jpg") %></a>
+        </li>
+        <li>
+          <a href="#photo5"><%= image_tag("#{@article.title}/#{@article.title}6.jpg") %></a>
+        </li>
+      <%end%>
+  </ul>
+</div>

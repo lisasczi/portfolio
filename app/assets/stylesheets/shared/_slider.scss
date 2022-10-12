@@ -1,0 +1,90 @@
+
+*{box-sizing:border-box}
+
+img{
+  max-width: 100%;
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+  display: none
+}
+/* englobe le slider */
+
+.cadre_diapo{
+  // max-width: 80%;
+  margin: 2rem auto;
+  overflow: hidden;
+  border: 6px solid #e1c8af;
+  // border: 1vw solid rgb(174, 135, 95);
+  border-radius: 10px;
+  // box-shadow: rgba(174, 135, 95, 0.05) 0vw 1vw 2vw, rgba(174, 135, 95, 0.05) 0vw 2vw 4vw;
+  box-shadow: rgba(174, 135, 95, 0.45) 0px 5px 15px;
+}
+
+.interieur_diapo{
+  display: flex;
+  width: 400%;
+  border-radius: 10px;
+  transition: transform .6s ease-in-out
+	}
+
+.des{
+  position: relative;
+}
+
+.des span{
+  position: absolute;
+  left: 0;
+  top: 2%;
+  font-size: 75%;
+  display: flex;
+  padding: .5rem;
+  justify-content: center;
+  color: white;
+  background: hsla(0,0%,0%,.35)
+}
+
+
+#photo1:target ~ .cadre_diapo .interieur_diapo{
+  transform:translatex(0)
+}/*image 1*/
+
+#photo2:target ~ .cadre_diapo .interieur_diapo{
+  transform:translatex(-25%)
+}/*image 2*/
+
+#photo3:target ~ .cadre_diapo .interieur_diapo{
+  transform:translatex(-50%)
+}/*image 3*/
+
+#photo4:target ~ .cadre_diapo .interieur_diapo{
+  transform:translatex(-75%)
+}/*image 4*/
+
+/*navigation avec images miniatures*/
+.navigation_diapo{
+  display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+  list-style-type: none;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0
+}
+
+.navigation_diapo li {
+	padding: .25rem;
+}
+
+.navigation_diapo img{
+  border: 3px solid white;
+  box-shadow:0 0 5px hsla(0,0%,0%,.4);
+  border-radius: 5px;
+
+}
+
+
+@media (min-width:31.25rem){
+	.des span{
+		font-size: initial
+		}
+}
