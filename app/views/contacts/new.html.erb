@@ -2,7 +2,7 @@
   <h1 class="main-title"> Et si nous <strong>discutions ?</strong></h1>
 
   <div class="formulaire">
-    <%= form_for @contact do |f| %>
+    <%= form_for Contact.new do |f| %>
       <div class="form-bloc">
 
       <div class="form-group">
@@ -34,4 +34,4 @@
   <% end %>
 </section>
 
-<%= render 'shared/footer' %>
+<%# <%= render 'shared/footer' %>

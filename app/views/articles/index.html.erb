@@ -1,6 +1,7 @@
 <div class="container">
 <h1 class="main-title">Voici les projets auxquels j'ai participé</h1>
     <div class="all-articles">
+     <% unless @articles.blank?%>
         <% @articles.each_with_index do |article, index| %>
             <div class="card_<%= index +1 %>">
                     <%# <h5><%= article.title</h5> %>
@@ -12,6 +13,7 @@
                 <%# </div> %>
             </div>
           <% end %>
+          <% end %>
       </div>
 </div>
-<%= render 'shared/footer' %>
+  <%= render template:'contacts/new' %>
