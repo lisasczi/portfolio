@@ -1,15 +1,22 @@
+<div class="container">
   <p><a href="<%= root_path %>" class="btn-accueil">Accueil</a> / <a href="<%= articles_path %>" class="btn-accueil">Articles</a> / <%= @article.title %></p>
 
-  <div class="home_services">
-        <div class="home_card_photo">
+  <div class="article_card">
+        <div class="articles_card_photo">
           <%= image_tag @article.image%>
-          </div>
-        <div class="home_card_info">
-          <div class="container">
-              <h1><%= @article.title %></h1>
-              <br/>
-              <p><%= @article.description %></p>
-              <br/>
-             <br/>
+        </div>
+        <div class="articles_card_title">
+          <h1><%= @article.title %></h1>
+        </div>
+        <div class="articles_card_description">
+          <p><%= @article.description %></p>
+        </div>
+        <div class="captures_ecran">
+          <p>Je vous propose plusieurs captures d'écran pour ce projet.</p>
+        </div>
   </div>
+</div>
+
+
+
 <%= render 'shared/footer' %>

@@ -60,7 +60,7 @@ nav{
 .item-nav:hover::after{
   width: 100%;
   color: #FCD338;
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 @media screen and (max-width: 650px) {
@@ -85,5 +85,3 @@ nav{
   }
 
 }
-
-

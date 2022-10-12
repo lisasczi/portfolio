@@ -7,8 +7,10 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2vw;
   grid-gap: 2vw;
-  margin-bottom: 2vw;
-  margin-top: 2vw;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  justify-content: center;
+  align-content: center;
 }
 
 
@@ -41,4 +43,12 @@
   grid-row: 2;
   width: 40vw;
   height: 20vw;
+}
+
+@media screen and (max-width: 650px) {
+  .all-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
