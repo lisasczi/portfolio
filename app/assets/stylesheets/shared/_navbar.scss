@@ -138,16 +138,22 @@ nav {
       height: auto;
       position: relative;
       display: none;
-      background: transparent;
+      background: white;
   }
   .liste-nav.active {
       display: block;
+      border-bottom: 2px solid black;
   }
   .item-nav {
       height: 70px;
       justify-content: center;
   }
-
+  .style_logo{
+    width: 80px;
+  }
+  .item-nav a {
+    font-size: 15px;
+  }
 }
 
 
