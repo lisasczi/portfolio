@@ -3,6 +3,8 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all
+          # @articles = Article.where(title: ["Amarylice", "Buddy","SuperPnp"])
+
   end
 
   def show
